@@ -2,6 +2,7 @@ import { StackNavigator, TabNavigator, TabBarBottom } from 'react-navigation'
 
 import Home from '../views/Home/Home'
 import Feed from '../views/Feed/Feed'
+import Profile from '../views/Profile/Profile'
 import Settings from '../views/Settings/Settings'
 
 const HomeStack = StackNavigator({
@@ -24,7 +25,8 @@ const HomeStack = StackNavigator({
 
 const Routes = TabNavigator({
   Home: { screen: HomeStack },
-  Feed: { screen: Feed }
+  Feed: { screen: Feed },
+  Profile: { screen: Profile }
 },
 {
   tabBarComponent: TabBarBottom,
